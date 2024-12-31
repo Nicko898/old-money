@@ -19,18 +19,6 @@
                 @method('PUT')
                 @csrf
 
-
-                {{-- <div class="w-full mb-8">
-                    <img class="mx-auto w-72 rounded-lg" src="../../img/{{ $product->img }}" alt="{{ $product->name }}">
-                  <label for="img" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Imágen</label>
-                  <input value="{{ old('img') }}" type="file" name="img" id="img" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
-                  @error('img')
-                        <div class="text-red-400">
-                            {{ $message }}
-                        </div>
-                    @enderror
-                </div> --}}
-
                 <div class="w-full mb-8">
                     <img class="w-46 mx-auto" src="{{ Storage::url('covers/' . $product->cover) }}" alt="{{ $product->cover_description }}" />
                   <label for="img" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Imágen</label>
@@ -78,9 +66,9 @@
                 <label for="sizes" class="flex mb-2 text-sm font-medium text-gray-900 dark:text-white">Talle</label>
                 <div class="flex items-center gap-6 dark:text-white">
                     @foreach($sizes as $size)
-                        <div>
+                        <div class="text-lg font-semibold">
                             <input 
-                                class="dark:bg-gray-700 rounded-sm w-5 h-5" 
+                                class="dark:bg-gray-700 rounded-md w-5 h-5 hover:cursor-pointer" 
                                 type="checkbox" 
                                 name="size_id[]" 
                                 value="{{ $size->size_id }}" 

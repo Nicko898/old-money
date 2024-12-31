@@ -1,13 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Product;
 
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function home(){
-        return view('home');
+        $productQuery = Product::with(['type', 'sizes']);
+
+        $mainProducts = $productQuery->paginate(3)->withQueryString();
+        
+        return view('home', [
+            'products' => $mainProducts,
+        ]);
     }
 
     public function products(){

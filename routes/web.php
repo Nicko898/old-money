@@ -7,6 +7,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\MercadoPagoController;
 
 
+
 Route::get('/', [App\Http\Controllers\HomeController::class, "home"])
  ->name('home');
 
@@ -141,5 +142,3 @@ Route::put('/admin/update-role/{id}', [AdminController::class, 'updateRole'])->n
 
 Route::get('/mercadopago/success', [MercadoPagoController::class, 'successProcess'])
   ->name('mercadopago.successProcess');
-
-  

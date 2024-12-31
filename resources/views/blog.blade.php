@@ -8,22 +8,11 @@
 @section('content')
 <h1 class="text-center dark:text-slate-100 text-3xl	my-8 font-medium">Sobre Nosotros</h1>
 
-
-<!-- <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-  <div class="shrink-0">
-
-  <div>
-    <div class="text-xl font-medium text-black">ChitChat</div>
-    <p class="text-slate-500">You have a new message!</p>
-  </div>
-</div> -->
-
-
 <ol class="ml-10 relative border-s border-gray-200 dark:border-gray-700">                  
     <li class="mb-10 ms-4">
       <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
       <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-white">2016</time>
-      <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Fundación de Old Money en Buenos Aires</h3>
+      <h3 class="text-xl font-semibold text-gray-900 dark:text-white">🥂Fundación de Old Money en Buenos Aires</h3>
       <ol class="ml-10 relative border-s border-gray-200 dark:border-gray-700">
         <li class="mt-3 mb-10 ms-4">
           <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Concepto</h4>
@@ -38,7 +27,7 @@
     <li class="mb-10 ms-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-white">2017</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Apertura de la Primera Tienda</h3>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">🏬Apertura de la Primera Tienda</h3>
         <ol class="ml-10 relative border-s border-gray-200 dark:border-gray-700">
           <li class="mt-3 mb-10 ms-4">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Tienda en Recoleta</h4>
@@ -53,7 +42,7 @@
     <li class="ms-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-white">2018</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Colaboraciones Exclusivas</h3>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">🫱🏼‍🫲🏼Colaboraciones Exclusivas</h3>
         <ol class="ml-10 relative border-s border-gray-200 dark:border-gray-700">
           <li class="mt-3 mb-10 ms-4">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Primera Colaboración</h4>
@@ -68,7 +57,7 @@
     <li class="ms-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-white">2019</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Expansión Regional</h3>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">🗺️Expansión Regional</h3>
         <ol class="ml-10 relative border-s border-gray-200 dark:border-gray-700">
           <li class="mt-3 mb-10 ms-4">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Tienda Online</h4>
@@ -83,7 +72,7 @@
     <li class="ms-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-white">2020</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Internacionalización</h3>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">🌐Internacionalización</h3>
         <ol class="ml-10 relative border-s border-gray-200 dark:border-gray-700">
           <li class="mt-3 mb-10 ms-4">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Expansión a Mercados Internacionales</h4>
@@ -94,7 +83,7 @@
     <li class="ms-4">
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
         <time class="mb-1 text-2xl font-normal leading-none text-gray-400 dark:text-white">2021-2024</time>
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Reconocimiento Global</h3>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">🎉Reconocimiento Global</h3>
         <ol class="ml-10 relative border-s border-gray-200 dark:border-gray-700">
           <li class="mt-3 mb-10 ms-4">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Colaboraciones Internacionales</h4>

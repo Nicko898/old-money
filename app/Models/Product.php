@@ -39,12 +39,11 @@ class Product extends Model
         );
     }
 
-    // Modelo Product
 public function orders()
 {
     return $this->belongsToMany(Order::class, 'order_product', 'product_id', 'order_id')
-        ->withPivot('quantity')  // Asegúrate de que 'quantity' está en la tabla pivote
-        ->withTimestamps();  // Asegura que se gestionen automáticamente las marcas de tiempo
+        ->withPivot('quantity') 
+        ->withTimestamps(); 
 }
 
 }

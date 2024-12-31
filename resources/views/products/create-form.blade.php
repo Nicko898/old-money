@@ -30,16 +30,6 @@
                     @enderror
                 </div>
 
-              {{-- <div class="w-full">
-                  <label for="img" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Imágen</label>
-                  <input value="{{ old('img') }}" type="file" name="img" id="img" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
-                  @error('img')
-                        <div class="text-red-400">
-                            {{ $message }}
-                        </div>
-                    @enderror
-                </div> --}}
-
                 <div class="w-full">
                     <label for="cover" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Imágen</label>
                     <input type="file" name="cover" id="cover" class=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
@@ -70,11 +60,11 @@
                     @enderror
                 </div>
               <div>
-                  <label for="sizes" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Talle</label>
+                  <label for="sizes" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Talles</label>
                   <div class="flex items-center gap-6 dark:text-white">
                     @foreach($sizes as $size)
-                        <div>
-                            <input class="dark:bg-gray-700 rounded-sm w-5 h-5" type="checkbox" name="size_id[]" value="{{ $size->size_id }}" @checked(in_array($size->size_id, old('size_id', [])))>
+                        <div class="text-lg font-semibold">
+                            <input class="hover:cursor-pointer rounded-md dark:bg-gray-700 w-5 h-5" type="checkbox" name="size_id[]" value="{{ $size->size_id }}" @checked(in_array($size->size_id, old('size_id', [])))>
                             {{ $size->name }}
                         </div>
                     @endforeach
@@ -90,7 +80,6 @@
                     
                 </div>
 
-                {{-- Agregado de clase --}}
                 <div>
                     <label for="type_fk" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tipo</label>
                   <select value="{{ old('type') }}" id="type_fk" name="type_fk" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">

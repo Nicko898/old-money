@@ -28,7 +28,7 @@
 </div>
 @endauth
 
-<div class="w-1/2 m-auto h-svh">
+<div class="max-w-3xl m-auto h-svh">
 
 
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-8">
@@ -71,7 +71,7 @@
                 </tr>
                 <tr>
                     <td colspan="4" class="bg-gray-50 dark:bg-gray-700 px-6 py-4">
-                        <strong>Compras:</strong>
+                        <strong>Última compra:</strong>
                         @if ($user->orders->isEmpty())
                             <p>Sin compras registradas.</p>
                         @else
@@ -79,8 +79,8 @@
                                 @foreach ($user->orders as $order)
                                     @foreach ($order->products as $product)
                                         <li>
-                                            Producto: <span class="font-semibold">{{ $product->name }}</span> - 
-                                            Cantidad: {{ $product->pivot->quantity }}
+                                            <span class="font-bold">{{ $product->name }}</span> x 
+                                            {{ $product->pivot->quantity }}
                                         </li>
                                     @endforeach
                                 @endforeach
